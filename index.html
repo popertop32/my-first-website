@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxwell Fletcher</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/hamburger.css">
+
     <style>
 
       html, body {
@@ -32,19 +34,22 @@
         header ul li {
           display:inline;
         }
-        a{
+
+        a {
           color: white;
           font-weight: bold;
           padding: 10px;
         }
 
-        a:hover{
+        a:hover {
           text-decoration: none;
           color: white;
         }
+
         a:visited {
           color: white;
         }
+
         img {
           width: 100%;
         }
@@ -55,9 +60,15 @@
   <body>
 
     <header>
+      <input type="checkbox" id="hamburger"/>
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <div class="menu">
+      </div>
       <ul>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
